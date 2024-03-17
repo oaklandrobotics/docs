@@ -3,10 +3,10 @@ import { generateSidebar } from 'vitepress-sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  head: [['link', { rel: 'icon', href: '/docs/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   title: "ORA Documentation",
   description: "Documentation for Oakland Robotics Association",
-  base: '/docs/',
+  //base: '/docs/',
   cleanUrls: true,
   markdown: {
     math: true,
