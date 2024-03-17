@@ -23,7 +23,7 @@ export default defineConfig({
           { text: 'Minibot', link: '/projects/minibot/' }
         ]
       },
-      { text: 'Guide', link: '/guide'}
+      { text: 'Documentation Guide', link: '/guide'}
     ],
     logo: '/logo.png',
     sidebar: generateSidebar({ //https://vitepress-sidebar.jooy2.com/options#sortmenusbyfrontmatterorder
