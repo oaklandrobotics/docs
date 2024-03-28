@@ -26,7 +26,7 @@ export default defineConfig({
       { text: 'Documentation Guide', link: '/guide'}
     ],
     logo: '/logo.png',
-    sidebar: generateSidebar({ //https://vitepress-sidebar.jooy2.com/options#sortmenusbyfrontmatterorder
+    sidebar: generateSidebar({ //https://vitepress-sidebar.jooy2.com/api
       documentRootPath: 'src',
       collapsed: false,
       useTitleFromFileHeading: true,
