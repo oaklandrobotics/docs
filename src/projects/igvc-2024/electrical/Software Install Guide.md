@@ -1,10 +1,11 @@
 # Software Install Guide
 
+[comment]: <> (Include guide for Arduino libraries)
 
 [[toc]]
 
 ## Overview
-**ANDREW WRITE SOMETHING HERE**
+
 ## Arduino IDE
 
 The Arduino IDE is a software tool used for writing, compiling, and uploading code to Arduino boards. Follow these steps to install Arduino IDE on your computer:
