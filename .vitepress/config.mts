@@ -28,7 +28,8 @@ export default defineConfig({
     logo: '/logo.png',
     sidebar: generateSidebar({ //https://vitepress-sidebar.jooy2.com/options#sortmenusbyfrontmatterorder
       documentRootPath: 'src',
-      collapsed: false,
+      collapsed: true,
+      collapseDepth: 2,
       useTitleFromFileHeading: true,
       useFolderTitleFromIndexFile: true,
       useFolderLinkFromIndexFile: true,
