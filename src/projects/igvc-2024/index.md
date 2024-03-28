@@ -16,3 +16,4 @@ The [Intelligent Ground Vehicle Competition](http://www.igvc.org/) is an annual 
 
 - [Electrical](./electrical/index.md)
 - [Mechanical](./mechanical/index.md)
+- [Software](./software/index.md)

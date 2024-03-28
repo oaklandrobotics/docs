@@ -1,1 +1,1 @@
-# software shit
+# Software Subteam - WIP
