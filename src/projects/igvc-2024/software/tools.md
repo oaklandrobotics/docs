@@ -12,14 +12,14 @@ Read the docs [here](https://docs.ros.org/en/humble/).
 
 ## Nav2 
 
-To create the path planning and visulization of the course, Horizon uses Nav2, a package that is part of ROS 2.
-This software is also open source, meaning publically avaiable [documentation](https://navigation.ros.org/).
+To create the path planning and visualization of the course, Horizon uses Nav2, a package that is part of ROS 2.
+This software is also open source, meaning publically available [documentation](https://navigation.ros.org/).
 
 ## Gazebo
 
 Gazebo is a simulation software included in ROS 2 that allows the user to create robots, models, and worlds to interact with and simulate.
-Integrated into the software is also the ability to add sensors, like a depth camera, and simulate physics based situations.
-The user can also import CAD models if the rudimentary shapes provided are insufficent for the detail needed.
+Integrated into the software is also the ability to add sensors, like a depth camera, and simulate physics-based situations.
+The user can also import CAD models if the rudimentary shapes provided are insufficient for the detail needed.
 Tutorials for using Gazebo can be found [here](https://classic.gazebosim.org/tutorials)
 
 ## OpenCV

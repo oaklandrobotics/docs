@@ -7,7 +7,7 @@ order: 2
 
 ## Overview
 
-This guide goes over the steps to install the some of the tools, softwares, and SDKs that we use.
+This guide goes over the steps to install some of the tools, software, and SDKs that we use.
 
 ## Ubuntu
 
@@ -64,7 +64,7 @@ Verify the installation was successful by running these commands:
 
 ``` sh
 export TURTLEBOT3_MODEL=waffle
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humbke/share/turtlebot3_gazebo/models
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
 
 ros2 launch nav2_bringup tb3_simulation_launch.py headless:=False
 ```
@@ -81,4 +81,4 @@ If you are installing on Windows, make sure you have CUDA installed beforehand.
     - [Ubuntu](https://www.stereolabs.com/docs/installation/linux)
     - Accept all the default options for the installation
 2. Verify that the installation was successful by running the ZED Explorer and ZED Depth Viewer.
-3. If you installed on Ubuntu, you can also play with the [ROS 2 tools](https://www.stereolabs.com/docs/ros2).
+3. If you installed it on Ubuntu, you can also play with the [ROS 2 tools](https://www.stereolabs.com/docs/ros2).

@@ -9,7 +9,7 @@ order: 4
 
 The Nvidia Jetson is a small computer developed for use with smart robotics.
 Specifically, the module used on Horizon is the Jetson Orin Nano 8GB.
-The module can simultaneously run compute-intensive tasks, like image processing, neural networks, or planning aglorithms without high electrical demand.
+The module can simultaneously run compute-intensive tasks, like image processing, neural networks, or planning algorithms without high electrical demand.
 An introduction, including documentation, a setup guide, and hardware specs can be found at [Jetson Orin Nano Developer Kit User Guide](https://developer.nvidia.com/embedded/learn/jetson-orin-nano-devkit-user-guide/index.html#introduction).
 
 ## Specs
@@ -37,7 +37,7 @@ The software running on the Jetson is Nvidia's proprietary "[JetPacks](https://d
 #### Requirements
 
 - A laptop or VM running the version of Ubuntu you wish to flash to the Jetson
-    - E.g. If you wish to to flash Ubuntu 20.04 to the Jetson, the laptop or VM must have Ubuntu 20.04 installed as well
+    - E.g. If you wish to flash Ubuntu 20.04 to the Jetson, the laptop or VM must have Ubuntu 20.04 installed as well
 - A high-speed USB Type-C to Type-A cable
     - For some reason, I've only been able to get the cable that comes with the ZED to work with it. Other cables may work, haven't really tried any :shrug:
 - A female-to-female jumper cable
@@ -57,14 +57,14 @@ The software running on the Jetson is Nvidia's proprietary "[JetPacks](https://d
     - Generally, you can accept the defaults. <!-- TODO Verify this -->
     - For the username and password, use `ora` and `ora-2023`, respectively
     - It is not necessary to install the "Additional SDKs" (DeepStream, Rivermax, etc.)
-6. Once installation has compleaaaaaaaaaaaaaated, you can proceed to use the Jetson as normal.
+6. Once the installation has been completed, you can proceed to use the Jetson as normal.
 
 ## Installing Software
 
 Most software should be able to be installed on the Jetson, similar to any other Ubuntu system.
 One thing to make note of is the Jetson's different CPU architecture.
 The Jetson is `arm64`-based rather than the usual `x86` you might find on most computers.
-If you are trying to install something on the Jetson, and the software is acting weird or not installing at all, check that you are are installing / have installed the correct build of that piece of software.
+If you are trying to install something on the Jetson, and the software is acting weird or not installing at all, check that you are installing/have installed the correct build of that piece of software.
 For our purposes, [ROS 2 supports `arm64`](https://www.ros.org/reps/rep-2000.html#humble-hawksbill-may-2022-may-2027), and the ZED SDK has [special builds specifically for Jetson](https://www.stereolabs.com/developers/release#nvidia-jetson-504616ef8d38).
 
 ## CAN

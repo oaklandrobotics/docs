@@ -7,8 +7,8 @@ order: 3
 
 ## ZED 2i Depth Camera
 
-Horizon utilizes a ZED2i stero camera for vision purposes.
-The ZED2i is a depth camera that was desgined for outdoor use with built in sensors for metrics such as acceleration, temperature, and air pressure.
+Horizon utilizes a ZED2i stereo camera for vision purposes.
+The ZED2i is a depth camera that was designed for outdoor use with built-in sensors for metrics such as acceleration, temperature, and air pressure.
 These alongside the main depth camera functionality and the included [ZED SDK](https://www.stereolabs.com/developers/release) make the ZED2i an invaluable piece of hardware in our software subsystem.
 Further [documentation](https://www.stereolabs.com/docs/get-started-with-zed) can be found on the stereolabs website.
 
@@ -26,4 +26,4 @@ Along with that, there is an extensive Arduino library for reading and controlli
 
 In addition to the BNO055 IMU provided by electrical, Horizon also makes use of the IMU built into the ZED which helps with position tracking for it, as well as localization overall.
 Since the BNO055 IMU is powered by electrical, the acceleration/velocity data sent out by the IMU is sent out over CAN.
-These two IMUs are fused together to get a better reading the robot's pose overall.  
+These two IMUs are fused to get a better reading of the robot's pose overall.  
