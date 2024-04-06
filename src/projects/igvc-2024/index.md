@@ -10,8 +10,6 @@ order: 1
 
 The [Intelligent Ground Vehicle Competition](http://www.igvc.org/) is an annual international robotics competition for teams of undergraduate and graduate students. The Robotics Association of Oakland University competes in the AutoNav challenge at this competition. 
 
-
-
 ## Subteams 
 
 - [Electrical](./electrical/index.md)
