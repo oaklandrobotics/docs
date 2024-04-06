@@ -11,9 +11,9 @@ order: 1
 
 ## Overview
 
-This documentation is powered by a tool called [VitePress](https://vitepress.dev/), which allows you to create [Markdown](https://en.wikipedia.org/wiki/Markdown) files and have them published in the form of a website with proper formatting, navigation between pages, etc. Even this file is in Markdown.
+This documentation is powered by a tool called [VitePress](https://vitepress.dev/), which allows you to create [Markdown](https://en.wikipedia.org/wiki/Markdown) files and have them published in the form of a website with proper formatting, navigation between pages, etc.
 
-## How to write in Markdown
+## How to Write Markdown
 
 First, here are some resources to get started with Markdown's syntax:
 
@@ -26,16 +26,36 @@ Some text editors, like [VS Code](https://code.visualstudio.com/) even have the 
 Alternatively, there are several in-browser Markdown editors available [here](https://www.google.com/search?q=markdown+editor+in+browser).
 Markdown files are written in just like any other text file, and there is no "compilation" step or anything of that sort.
 What you see is simply what you get.
+[Here's what the source for this page looks like.](https://github.com/oaklandrobotics/docs/blob/main/src/guide.md?plain=1)
 
 In general, Markdown uses different symbols to format texts in different ways, like so:
 
-- This is _italic_ (`This is _italic_`)
-- This is **bold** (`This is **bold**`)
-- This is _**bold and italic**_ (`This is _**bold and italic**_`)
-- This is a [link](https://oaklandrobotics.org/) (`This is a [link](https://oaklandrobotics.org/)`)
-- Headings are created with pound signs (`#` for a main heading, `##` for a sub-heading, etc.), and lists are made with dashes (`-`) or numbers for ordered lists.
+|                  Formatted Text                 |                     Source Text                     |
+|:-----------------------------------------------:|:---------------------------------------------------:|
+|                 This is _italic_                |                  `This is _italic_`                 |
+|                  This is *bold*                 |                   `This is *bold*`                  |
+|          This is _**bold and italic**_          |           `This is _**bold and italic**_`           |
+|  This is a [link](https://oaklandrobotics.org/) |   `This is a [link](https://oaklandrobotics.org)`   |
 
-## How to create and edit pages on the website
+
+- This is a bulleted list
+- Here's another item
+``` md
+- This is a bulleted list
+- Here's another item
+```
+
+<br>
+
+1. This is an ordered list
+2. Step 2
+
+``` md
+1. This is an ordered list
+2. Step 2
+```
+
+## How to Create and Edit Pages
 
 ### File and Folder Structure
 
@@ -102,6 +122,11 @@ You probably know what you're doing. (This is also how can you preview the websi
 3. Open a terminal in the same directory as the repo, and run this command:
     - Take a look at this guide for more info: https://vitepress.dev/guide/getting-started
 
+```sh
+npm install
+```
+**(Optional)** If you want to update the dependencies, (i.e. VitePress, which updates fairly often), you can run
+
 ``` sh
 npm add -D vitepress vitepress-sidebar markdown-it-mathjax3
 ```
@@ -115,12 +140,11 @@ npm run docs:dev
 5. You should see a message similar to this. Enter the URL it gives you in your browser to see the preview of the webpage.
 
 ``` sh
-  vitepress v1.0.0-rc.45
+  vitepress v1.0.1
 
   ➜  Local:   http://localhost:5173/
   ➜  Network: use --host to expose
   ➜  press h to show help
-
 ```
 
 6. Make your changes and push 'em.
@@ -131,11 +155,15 @@ That's it! Your changes should be visible on the website after GitHub rebuilds t
 
 ### Changing Settings
 
-You can change the settings and behaviors of the website by editing [`.vitepress/config.mts`](https://github.com/oaklandrobotics/docs/blob/main/.vitepress/config.mts). This includes things like the Navbar at the top, This requires very light knowledge of how TypeScript and Vue.js work. Take a look at these guides for more info:
+You can change the settings and behaviors of the website by editing [`.vitepress/config.mts`](https://github.com/oaklandrobotics/docs/blob/main/.vitepress/config.mts).
+This includes things like the navbar at the top, the sidebar, and the theme of the website, among other things.
+This requires very light knowledge of how TypeScript and Vue.js work.
+Take a look at these guides for more info:
+
 - https://vitepress.dev/reference/site-config
 - https://vitepress.dev/reference/default-theme-config
-- https://vitepress-sidebar.jooy2.com/options
 - https://vitepress.dev/guide/frontmatter
+- https://vitepress-sidebar.jooy2.com/api
 
 ### GitHub Pages
 
@@ -143,9 +171,9 @@ The website itself is hosted on GitHub Pages.
 In order for this to work properly VitePress needs to generate the actual `.html` pages that are hosted by GitHub Pages.
 This is made possible by a GitHub Action workflow that builds the webpage and deploys it with GitHub Pages.
 The workflow can be found at [`.github/workflows/deploy.yml`](https://github.com/oaklandrobotics/docs/blob/main/.github/workflows/deploy.yml).
-It will run every time the repo is pushed to.
-If it seems like the website is not updating, make sure there is a "✔" icon next to the most recent commit.
-If there is an "❌," it means the build failed for some reason.
+It will run every time the repo is pushed to on the `main` branch.
+If it seems like the website is not updating, make sure there is a green ":white_check_mark:" icon next to the most recent commit.
+If there is an ":x:," it means the build failed for some reason.
 Check the logs to troubleshoot the issue.
 
 More info: https://vitepress.dev/guide/deploy#github-pages
