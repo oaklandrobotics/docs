@@ -1,3 +1,3 @@
-# Mechanical Subteam -WIP
+# Mechanical Subteam - WIP
 
 ## Overview
