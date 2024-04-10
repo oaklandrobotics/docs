@@ -1,4 +1,7 @@
 # Software Install Guide
+---
+order: 1
+---
 
 [comment]: <> (Include guide for Arduino libraries)
 
