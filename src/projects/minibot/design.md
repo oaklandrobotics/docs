@@ -15,4 +15,4 @@ Operating the minibot requires uploading code to the central device that connect
 #### Arduino
 Arduino code is typically distributed through a Sketch file to be used in the Arduino IDE. Example code for such a program can be found [here](https://github.com/oaklandrobotics/minibot23/tree/main).
 #### ESP32
-(WIP)
+Like the Arudino, the Arduino IDE can be used to upload code to the ESP32. Example code for such a program can be found here.
