@@ -33,6 +33,13 @@ Each node on the CAN Bus requires 3 main things in order to function
 
 ## Message Structure
 
-Something something ODrive uses CANSimple built on CAN 2.0
+The ODrive uses a CANSimple protocol built on CAN 2.0, where the command id is stored inside the region of the node id via bitshifting.
+The Data field works similarly to a normal CAN protocol.
+The most relevant commands the ODrive supports are as follows, a full listing can be found on the [ODrive website](https://docs.odriverobotics.com/v/latest/manual/can-protocol.html#messages):
 
-*Put the table here* 
+| Name | Command ID | Direction | Data |
+| ----------- | ----------- | ----------- | ----------- |
+| Estop | 0x02 | Host -> ODrive | N/A |
+| Set_Axis_State | 0x07 | Host -> ODrive | `uint32 : Requested State` |
+| Set_Input_Pos | 0x0C | Host -> ODrive | `float32 : Position(rev)` - `short : Velocity(0.001 rev/s)` - `short : Torque(0.001 Nm)`|
+| Set_Input_Vel | 0x0D | Host -> ODrive | `float32 : Velocity(rev/s)` - `float32 : Torque(Nm)` |
