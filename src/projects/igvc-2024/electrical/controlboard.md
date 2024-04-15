@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # Robot Control Board - WIP
 
 ## Overview
