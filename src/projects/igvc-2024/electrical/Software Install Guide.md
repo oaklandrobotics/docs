@@ -9,9 +9,11 @@ order: 1
 
 ## Overview
 
+Interfacing with the electrical components requires a number of tools which allows one to monitor and upload code. Instructions for installing recommended software
+
 ## Arduino IDE
 
-The Arduino IDE is a software tool used for writing, compiling, and uploading code to Arduino boards. Follow these steps to install Arduino IDE on your computer:
+The Arduino IDE is a software tool used for writing, compiling, and uploading code to Arduino boards.
 
 ### Step 1: Download Arduino IDE
 
@@ -58,11 +60,10 @@ The Arduino IDE is a software tool used for writing, compiling, and uploading co
         ```
         SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", GROUP="plugdev", MODE="0666"
         ```
-#### Conclusion
-
-Congratulations! You have successfully installed the Arduino IDE on your system.
 
 ## KiCad
+
+KiCad is used to create logic board designs, necessary for creating an electrical component with custom functionality/interfaces. 
 
 ### Step 1: Download KiCad 8.0
 
@@ -106,6 +107,18 @@ Congratulations! You have successfully installed the Arduino IDE on your system.
     ```
     Follow any prompts or instructions that appear during the installation process.
 
-#### Conclusion
+## Cangaroo
 
-Congratulations! You have successfully installed KiCad 8.0 on your system.
+Cangaroo is a CAN bus analyzer, commonly used in conjuntion with the VulCAN USB-CAN peripheral.
+
+### Windows
+It is recommended to download Cangaroo from the [CANable Website](https://canable.io/utilities/cangaroo-win32-ccdcb64.zip)
+
+After downloading the archive, the executable can be extracted from the archive and subsequently ran.
+
+### Linux
+The [Cangaroo repository](https://github.com/HubertD/cangaroo) is currently unmaintained, and the build instructions recommend Ubuntu 16.04. One can check to see if a package is available for their distro, or attempt to compile one of the [more active forks](https://github.com/HubertD/cangaroo/forks).
+
+### macOS
+This software is not available on macOS. One may find success with using [SavvyCAN](https://github.com/collin80/SavvyCAN/releases) instead.
+
