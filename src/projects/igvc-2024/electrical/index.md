@@ -13,11 +13,9 @@ With Horizon, the goal was to produce a competitive robot to compete in IGVC whi
 Some of the main changes from previous designs that are included on Horizon are as follows
 - Custom Control Board - *PCB built and assembled by members to control basic functions within the robot*
 - NVIDIA Jetson Orin Nano - *In place of a laptop, the Jetson Orin Nano is used for vision processing and movement commands*
-- Brushless DC Motors & ODrive S1 Motor Controlers - *The team moved to brushless motors as they were more efficient and have a longer lifespan than brushed motors*
+- Brushless DC Motors & ODrive S1 Motor Controlers - *The team moved to brushless motors as they were more efficient and have a longer lifespan than brushed motors. This change brought in the use of a new motor controller in the ODrive S1.*
 
 - Something else 
-
-- Something else
-
 [comment]: <> (Add something here)
+- Something else
 [comment]: <> (Add something here)
