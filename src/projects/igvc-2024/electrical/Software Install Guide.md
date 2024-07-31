@@ -10,6 +10,8 @@ order: 1
 
 ## Overview
 
+This guide goes over the basic instructions to install each piece of software that would be needed to work on or recreate OUs 2024 IGVC robot - Horizon. 
+
 ## Arduino IDE
 
 The Arduino IDE is a software tool used for writing, compiling, and uploading code to Arduino boards. Follow these steps to install Arduino IDE on your computer:
@@ -64,6 +66,8 @@ The Arduino IDE is a software tool used for writing, compiling, and uploading co
 Congratulations! You have successfully installed the Arduino IDE on your system.
 
 ## KiCad
+
+KiCad is a free software suite that we used for PCB design. It allowed us to create a schematic or electrical drawing of our control board, and then generate the files to have it manufactured into a PCB. 
 
 ### Step 1: Download KiCad 8.0
 
