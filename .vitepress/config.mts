@@ -6,7 +6,7 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   title: "ORA Documentation",
   description: "Documentation for Oakland Robotics Association",
-  //base: '/docs/',
+  base: '/docs/',
   cleanUrls: true,
   markdown: {
     math: true,

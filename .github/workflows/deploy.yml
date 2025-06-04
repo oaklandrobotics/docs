@@ -37,12 +37,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm # or pnpm / yarn
+          node-version: latest
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install node dependencies
-        run: npm add -D markdown-it-mathjax3 vitepress vitepress-sidebar # or pnpm install / yarn install / bun install
+        run: npm install # or pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Upload artifact

@@ -2,6 +2,6 @@
 
 The documentation website for ORA.
 
-To view the website, head go to https://docs.oaklandrobotics.org.
+To view the website, head to https://oaklandrobotics.github.io/docs.
 
-To make changes to the website, view the [guide](https://docs.oaklandrobotics.org/guide).
+To make changes to the website, view the [guide](https://oaklandrobotics.github.io/docs/guide).
