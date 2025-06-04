@@ -19,6 +19,7 @@ export default defineConfig({
       { 
         text: 'Projects', 
         items: [
+          { text: 'IGVC 2025', link: '/projects/igvc-2025/' },
           { text: 'IGVC 2024', link: '/projects/igvc-2024/' },
           { text: 'Minibot', link: '/projects/minibot/' }
         ]
