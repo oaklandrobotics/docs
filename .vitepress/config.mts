@@ -43,7 +43,7 @@ export default defineConfig({
     ],
     outline: 'deep',
     footer: {
-      copyright: 'Copyright © 2025 Oakland Robotics Association'
+      copyright: 'Copyright © 2026 Oakland Robotics Association'
     },
     editLink: {
       pattern: 'https://github.com/oaklandrobotics/docs/edit/main/src/:path',
