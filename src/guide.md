@@ -33,7 +33,7 @@ In general, Markdown uses different symbols to format texts in different ways, l
 |                  Formatted Text                 |                     Source Text                     |
 |:-----------------------------------------------:|:---------------------------------------------------:|
 |                 This is _italic_                |                  `This is _italic_`                 |
-|                  This is *bold*                 |                   `This is *bold*`                  |
+|                 This is **bold**                |                  `This is **bold**`                 |
 |          This is _**bold and italic**_          |           `This is _**bold and italic**_`           |
 |  This is a [link](https://oaklandrobotics.org/) |   `This is a [link](https://oaklandrobotics.org)`   |
 
