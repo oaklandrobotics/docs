@@ -4,7 +4,7 @@
 
 ### RecoveryNode
 
-##### Behavior
+#### Behavior
 
 - If the first child returns success, recovery node returns success.
 - If the first child returns failure, the 2nd child will be executed.
