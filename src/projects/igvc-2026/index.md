@@ -6,7 +6,7 @@ next: false
 order: 1
 ---
 
-# IGVC 2024
+# IGVC 2026
 
 The [Intelligent Ground Vehicle Competition](http://www.igvc.org/) is an annual international robotics competition for teams of undergraduate and graduate students. The Robotics Association of Oakland University competes in the AutoNav challenge at this competition. 
 

@@ -1,4 +1,4 @@
-# ROS2 Setup(Docker)
+# Docker Setup
 
 > **Disclaimer:** This was tested and done on Windows 11.
 ---
@@ -48,7 +48,7 @@ services:
     environment:
       - DISPLAY=host.docker.internal:0.0   # Required for GUI (VcXsrv)
       - ROS_DOMAIN_ID=0                    # Required for ROS2 communication
-      - QT_X11_NO_MITSHM=1                # Required for Qt-based GUI apps (RViz, rqt)
+      - QT_X11_NO_MITSHM=1                 # Required for Qt-based GUI apps (RViz, rqt)
       - LIBGL_ALWAYS_INDIRECT=0            # Required for OpenGL rendering in container
     volumes:
       - ./workspace:/root/workspace        # Mounts your local workspace into the container
