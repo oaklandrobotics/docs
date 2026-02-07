@@ -1,1 +1,1 @@
-# Electrical Subteam - WIP
+# Electrical
