@@ -2,7 +2,7 @@
 #sidebar: false
 #aside: false
 prev: false
-order: 1
+order: 2
 ---
 
 # Minibot
