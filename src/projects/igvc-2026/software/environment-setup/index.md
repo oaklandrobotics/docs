@@ -6,7 +6,7 @@ ROS 2 is an open-source communications middleware that allows various sensors, a
 
 Read the official documentation [here](https://docs.ros.org/en/jazzy/).
 
-## Installation methods
+### Installation methods
 
 ROS 2 is supported on multiple platforms, but we recommend either using a native installation of Ubuntu or a containerized Docker environment, as these approaches are the most stable and easiest to support as a team. You can reference the official documentation (linked above) for alternative installation options.
 
@@ -14,7 +14,7 @@ Our recommended setup paths:
 - [Native](./native.md)
 - [Docker](./docker.md)
 
-## Which method should you choose?
+### Which method should you choose?
 
 The installation method you choose mostly depends on what tasks or goals you are trying to accomplish. That being said, both are equally viable options, however most of the leadership is familiar with the native installation.
 This table discusses some of the benefits & drawbacks of each method:
@@ -30,3 +30,11 @@ Topic | Docker | Native
 **Debugging** | Extra layer to access tools, files, logs | Direct access to access tools, files, logs
 
 See (or message) Kayla Dawkins (@danielle217) if you have any questions about the benefits of Docker or issues with the setup
+
+## Setting up your workspace
+
+A workspace in ROS 2 refers to the directory which contains the ROS 2 packages used in your project. 
+All of the code that we write will be contained inside of a package in the workspace.
+
+Our recommended workspace setup:
+- [Running the project for the first time](./first-run.md)
