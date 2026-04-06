@@ -17,6 +17,7 @@ Since we are using **ROS 2 Jazzy**, we recommend installing **Ubuntu 24.04**, wh
 
 1. [Install ROS 2 Jazzy](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debians.html)
     - Be sure to do the full desktop install (`sudo apt install ros-jazzy-desktop`).
+    - Install Ros 2 optional tools (needed for workspace setup)(`sudo apt install ros-dev-tools`)
     - To verify that your installation works correctly, try running the ROS 2 talker/listener examples from the official documentation.
 2.  Run this command:
     ``` sh
