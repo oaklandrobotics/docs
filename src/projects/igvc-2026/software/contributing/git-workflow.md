@@ -4,7 +4,7 @@
 
 ## Background
 
-We follow a specific workflow[Definition](#definitions) to keep our projects organized and structured. This structure makes it simpler for members to contribute as well as for leaders to manage those contibutions.
+We follow a specific workflow([Definition](#definitions)) to keep our projects organized and structured. This structure makes it simpler for members to contribute as well as for leaders to manage those contibutions.
 
 ---
 
