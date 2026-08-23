@@ -4,6 +4,11 @@ Welcome to the team! To keep our codebase clean, organized, and maintainable, we
 
 ---
 
+## 0. Helpful Links to Resources (Optional)
+
+- Git is our choice of version control system: [Git commands CLI](https://www.w3schools.com/git/) OR [Git VsCode GUI](https://code.visualstudio.com/docs/sourcecontrol/quickstart)
+- GitHub is used to host and contribute: [Pull Requests](https://docs.github.com/en/pull-requests/reference/pull-requests)
+
 ## 1. Quick Overview of Workflow Steps
 
 1. **Find or Create an Issue:** Express interest or define a task.
