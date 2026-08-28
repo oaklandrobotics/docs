@@ -66,7 +66,7 @@ Branch names must be descriptive, lowercase, hyphen-separated, and clearly indic
 ### Creating a Pull Request
 1. Push your local branch to the central repository.
 2. Open a Pull Request targeting the `main` branch.
-3. **PR Title:** Keep it aligned with your commit style (e.g., `feat: Integrate ZED camera package`).
+3. **PR Title:** Keep it aligned with commit style, brief and imperative (e.g., `Integrate ZED camera package`).
 4. **Linking Issues:** You **must link the issue** your PR addresses using GitHub's keyword auto-linking in the PR description:
    - Use keywords such as `Closes #<issue_number>`, `Fixes #<issue_number>`, or `Resolves #<issue_number>` (e.g., `Closes #42`).
    - Linking the issue automatically closes it once the PR is merged into `main`.
