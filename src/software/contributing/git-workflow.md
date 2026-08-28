@@ -2,12 +2,11 @@
 
 Welcome to the team! To keep our codebase clean, organized, and maintainable, we follow a standardized Git workflow and contribution process. 
 
----
 
 ## 0. Helpful Links to Resources (Optional)
 
-- Git is our choice of version control system: [Git commands CLI](https://www.w3schools.com/git/) OR [Git VsCode GUI](https://code.visualstudio.com/docs/sourcecontrol/quickstart)
-- GitHub is used to host and contribute: [Pull Requests](https://docs.github.com/en/pull-requests/reference/pull-requests)
+- We use Git as our version control system. You can interact with Git through either the [CLI](https://www.w3schools.com/git/) or a [GUI](https://code.visualstudio.com/docs/sourcecontrol/quickstart).
+- Our codebase is hosted on GitHub. You can browse the repository and contribute changes through [pull requests](https://docs.github.com/en/pull-requests/reference/pull-requests).
 
 ## 1. Quick Overview of Workflow Steps
 
@@ -17,7 +16,6 @@ Welcome to the team! To keep our codebase clean, organized, and maintainable, we
 4. **Push Branch & Open a Pull Request (PR):** Link the issue and fill out the PR template.
 5. **Code Review & Merge:** Address feedback, obtain approval, and merge.
 
----
 
 ## 2. Issue Management & Task Delegation
 
@@ -28,11 +26,10 @@ Before starting any work, ensure an issue exists for the task.
 - **Description:** Include background information, requirements, steps to reproduce (for bugs), and expected behavior or completion criteria.
 
 ### Task Delegation & Claiming Issues
-- We **do not** formally assign issues to team members up front.
-- If you would like to work on an issue, **leave a comment on the issue thread** stating your intention (e.g., *"I'd like to work on this issue."*).
+- We encourage members to claim issues that they are interested in and would like to work on. This gives you the freedom to explore areas of the project that interest you and develop skills you want to learn. If you're unsure what to work on or would like some direction, feel free to reach out to leadership and we can help find an appropriate issue or assignment.
+- If you would like to work on an issue, [assign yourself](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/assigning-issues-and-pull-requests-to-other-github-users) to the issue on GitHub. You may also comment on the issue to give additional information if needed.
 - This signals your interest to the rest of the team and prevents duplicate work.
 
----
 
 ## 3. Branching Guidelines
 
@@ -50,34 +47,19 @@ Branch names must be descriptive, lowercase, hyphen-separated, and clearly indic
 
 > **Rule:** Keep branches focused on a single topic. Do not mix unrelated changes (e.g., navigation tweaks and documentation updates) in the same branch.
 
----
 
 ## 4. Commit Message Formatting
 
-We follow Conventional Commits standardizing the structure of commit messages:
+- **Commit Message Format:** Write clear, imperative commit messages (e.g., "Add user authentication" instead of "Added user authentication" or "Adding user authentication"). Think of the message as a command completing the sentence: "If applied, this commit will...".
 
-```
-<type>: <short, imperative description>
-```
+- **Commit Principal:** Commit early and commit often. Make small, logical commits as you work to keep your history clean, easier to review, and simple to revert if necessary.
 
-### Commit Types
-- `feat`: A new feature
-- `fix`: A bug fix
-- `docs`: Documentation updates only
-- `style`: Code style/formatting changes (no logic changes)
-- `refactor`: Code restructuring without changing functionality or fixing bugs
-- `perf`: Code changes that improve performance
-- `test`: Adding or modifying tests
-- `build`: Changes affecting build systems (CMake, package.xml, dependencies)
-- `chore`: Maintenance tasks, minor script adjustments
-- `revert`: Reverts a previous commit
+- For furthur guidance, follow the [ROS 2 contribution guidelines](https://docs.ros.org/en/jazzy/The-ROS2-Project/Contributing/Developer-Guide.html#implementation).
 
 ### Examples
-- `feat: Add config file for the nav plugin`
-- `docs: Update setup instructions for ROS 2 launch files`
-- `fix: Correct frame_id mismatch in pointcloud publisher`
+- `Add missing transform link between map and odom.`
+- `Remove depricated package.xml dependancy entries.`
 
----
 
 ## 5. Pull Requests (PRs) & Code Reviews
 
