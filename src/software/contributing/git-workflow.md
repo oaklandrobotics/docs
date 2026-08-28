@@ -29,6 +29,7 @@ Before starting any work, ensure an issue exists for the task.
 - We encourage members to claim issues that they are interested in and would like to work on. This gives you the freedom to explore areas of the project that interest you and develop skills you want to learn. If you're unsure what to work on or would like some direction, feel free to reach out to leadership and we can help find an appropriate issue or assignment.
 - If you would like to work on an issue, [assign yourself](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/assigning-issues-and-pull-requests-to-other-github-users) to the issue on GitHub. You may also comment on the issue to give additional information if needed.
 - This signals your interest to the rest of the team and prevents duplicate work.
+- Collaboration is welcome! If you'd like to help out on an issue that's already assigned, reach out to the current assignee first so you can coordinate and work together.
 
 
 ## 3. Branching Guidelines
