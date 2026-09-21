@@ -4,7 +4,7 @@ ROS2 bags let you record messages published to topics and replay them later. Thi
 
 ## Example Bags
 
-Some example bags are stored in our Google Drive and can be accessed [here*](https://drive.google.com/drive/folders/17S5-LnJm3yi2zjNNsaiKRRkUrNrLBQzX?usp=drive_link). There are four bags available: `first_run`, `first_run_reduced`, `second_run`, and `second_run_reduced`. The `reduced` versions include a small subset of the more interesting topics from the large list of all topics, to reduce file size. The list of included topics is:
+Some example bags are stored in our Google Drive and can be accessed [here*](https://drive.google.com/drive/folders/17S5-LnJm3yi2zjNNsaiKRRkUrNrLBQzX?usp=drive_link). Four bags are available: `first_run`, `first_run_reduced`, `second_run`, and `second_run_reduced`. The `reduced` versions include a small subset of the more interesting topics from the full list to reduce file size. The list of included topics is:
 
 | Category | Topics |
 | --- | --- |
@@ -23,7 +23,7 @@ Follow these instructions to get started:
 
 > [!IMPORTANT]
 > - Ensure your environment has been set up, and your workspace has been sourced by completing the instructions in the ros_ora26 [README](https://github.com/oaklandrobotics/ros_ora26#environment-setup).
-> - Also ensure you have the `zstd` installed to extract the bag. You can install it with: 
+> - Also ensure you have `zstd` installed to extract the bag. You can install it with: 
 >     ```sh
 >     sudo apt install zstd
 >     ```
@@ -34,7 +34,7 @@ mkdir ~/bags && cd ~/bags
 ```
 
 2. Choose a bag from the Google Drive folder* and download it to that location.
-3. Extract the bag with this commannd:
+3. Extract the bag with this command:
 
 ```sh
 tar --zstd -xf <bag_name>.tar.zst
@@ -97,7 +97,7 @@ ros2 bag play --start-offset 60 --playback-duration 30 <bag_name>
 
 ## Recording
 
-Before recording, be sure to change into the directory where you would like the bag to be saved. After that, all that needs to be done is running the `ros2 bag record` command to capture the data being published to a topic (or topics). The bag will be named with the format of `rosbag2_year_month_day-hour_minute_second`, unless the `-o` parameter is used to specify a name for your bag. You can press **Ctrl + C** to stop the recording once finished. See [this section](https://github.com/ros2/rosbag2#record) of the rosbag2 README for more info. Here are some example commands:
+Before recording, be sure to change into the directory where you would like the bag to be saved. After that, run the `ros2 bag record` command to capture the data being published to a topic (or topics). The bag will be named in the format of `rosbag2_year_month_day-hour_minute_second`, unless the `-o` parameter is used to specify a name for your bag. You can press **Ctrl + C** to stop the recording once finished. See [this section](https://github.com/ros2/rosbag2#record) of the rosbag2 README for more info. Here are some example commands:
 
 - Record a single topic:
 ```sh
@@ -121,7 +121,7 @@ ros2 bag record -a
 
 ## Reducing/Converting
 
-Sometimes it may be useful to reduce the number of topics in a bag, or modify it to have a smaller file size so it is easier to handle. For example, you may want to extract a few topics of interest from a previous bag that was recorded with `ros2 bag record -a`. This is where the `ros2 bag convert` command can be used. With `convert`, you can modify bags by merging two bags together, splitting a bag into multiple bags, trimming the start and end times, or changing storage methods, among other things. See [this section](https://github.com/ros2/rosbag2#convert) of the rosbag2 README for more info.
+Sometimes it may be useful to reduce the number of topics in a bag, or modify it to have a smaller file size so it is easier to handle. For example, you may want to extract a few topics of interest from a previous bag that was recorded with `ros2 bag record -a`. This is where the `ros2 bag convert` command can be used. With `convert`, you can modify bags by merging two or more bags, splitting a bag into multiple bags, trimming the start and end times, or changing storage methods, among other things. See [this section](https://github.com/ros2/rosbag2#convert) of the rosbag2 README for more info.
 
 These steps will show what was done to create the `reduced` versions of the example bags.
 
@@ -131,7 +131,7 @@ cd ~/bags
 ros2 bag record -o first_run -a
 ```
 
-2. Create a configuration YAML file in the same directory as the bag. Inside of this, choose a name for the output bag, as well as the list of topics. (See the example `out.yaml` below):
+2. Create a configuration YAML file in the same directory as the bag. Inside this file, choose a name for the output bag, as well as the list of topics. (See the example `out.yaml` below):
 ```sh
 touch out.yaml
 nano out.yaml
