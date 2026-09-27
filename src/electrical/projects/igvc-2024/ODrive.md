@@ -2,7 +2,7 @@
 order: 4
 ---
 
-# Odrive - WIP
+# Odrive
 
 ## Overview
 

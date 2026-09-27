@@ -27,8 +27,6 @@ Each node on the CAN Bus requires 3 main things in order to function
 
 ## Node Network
 
-
-
 <img src=".\assets\ExampleCANBus.png" width="400" height="400" alt="Node Structure" style="horizontal-align:middle">
 
 ## Message Structure
