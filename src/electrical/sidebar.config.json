@@ -1,5 +1,6 @@
 {
     "$folder": {
-        "text": "Electrical"
+        "text": "Electrical",
+        "order": 1
     }
 }

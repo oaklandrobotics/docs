@@ -16,14 +16,8 @@ export default defineConfig({
   themeConfig: { // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { 
-        text: 'Projects', 
-        items: [
-          { text: 'IGVC 2025', link: '/projects/igvc-2025/' },
-          { text: 'IGVC 2024', link: '/projects/igvc-2024/' },
-          { text: 'Minibot', link: '/projects/minibot/' }
-        ]
-      },
+      { text: 'Software', link: '/software', activeMatch: '/software/' },
+      { text: 'Electrical', link: '/electrical', activeMatch: '/electrical/' },
       { text: 'Documentation Guide', link: '/guide'}
     ],
     logo: '/logo.png',
