@@ -1,4 +1,0 @@
-# Chasis - WIP
-
-## Overview
-
