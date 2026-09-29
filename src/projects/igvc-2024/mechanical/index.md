@@ -1,3 +1,0 @@
-# Mechanical Subteam - WIP
-
-## Overview
