@@ -1,0 +1,46 @@
+# .github/workflows/preview.yml
+name: Deploy preview docs from PRs
+
+on:
+    pull_request:
+        types:
+            - opened
+            - reopened
+            - synchronize
+            - closed
+
+concurrency: preview-${{ github.ref }}
+
+jobs:
+    deploy-preview:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Setup Node
+              if: github.event.action != 'closed'
+              uses: actions/setup-node@v5
+              with:
+                node-version: latest
+                cache: npm
+
+            - name: Install and Build
+              if: github.event.action != 'closed' # We don't need the build if we know the preview will be removed
+              env:
+                VITE_DOCS_PREVIEW: "true"
+                VITE_DOCS_PREVIEW_PR: ${{ github.event.number }}
+              run: |
+                  npm ci
+                  npm run docs:build -- --base "/pr-preview/pr-${{ github.event.number }}/"
+
+            - name: Deploy preview
+              uses: rossjrw/pr-preview-action@v1
+              with:
+                  source-dir: ./.vitepress/dist/
+                  preview-branch: gh-pages
+                  pages-base-url: docs.ourobotics.org
+                  wait-for-pages-deployment: true
+                  qr-code: false
+                  git-config-name: erdferkel
+                  git-config-email: robotics@oakland.edu
